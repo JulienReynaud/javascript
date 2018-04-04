@@ -93,7 +93,7 @@ window.addEventListener("load", function () {
                 label.removeChild(label.firstChild);
                 var t = document.createTextNode(title);
                 label.appendChild(t);
-                console.log(link);
+
 
                 var audio = document.createElement("audio");
                 audio.setAttribute("id", "music");
@@ -117,12 +117,12 @@ window.addEventListener("load", function () {
 
         var i = this.getAttribute("name");
         i = parseInt(i);
-        console.log(i);
+
         j = i + 1;
-        console.log(j);
+
 
         var input = document.getElementById("musique" + j);
-        console.log(input);
+
         var link = input.getAttribute("href");
         var title = input.getAttribute("value");
         var label = document.getElementById("titre");
@@ -142,7 +142,7 @@ window.addEventListener("load", function () {
     function monter(e) {
         var i = this.getAttribute("name");
         i = parseInt(i);
-        console.log(i);
+
         var td = document.getElementById("musique" + i);
         var j = i - 1;
         var link = td.getAttribute("href");
@@ -166,15 +166,15 @@ window.addEventListener("load", function () {
         var i = this.getAttribute("name");
         i = parseInt(i);
         var x = this.getAttribute("class");
-        console.log(i);
+
         var td = document.getElementById("musique" + i);
         var j = i + 1;
-        console.log(j);
+
         var link = td.getAttribute("href");
         var title = td.getAttribute("value");
         if (i < x) {
             var lignedessus = document.getElementById("musique" + j);
-            console.log(lignedessus);
+
             var linkdessus = lignedessus.getAttribute("href");
             var titledessus = lignedessus.getAttribute("value");
 
@@ -213,7 +213,7 @@ window.addEventListener("load", function () {
             var t = document.createTextNode(title);
             label.removeChild(label.firstChild);
             label.appendChild(t);
-            console.log(link);
+
             var audio = document.createElement("audio");
             audio.setAttribute("id", "music");
             audio.setAttribute("preload", "true");
@@ -233,7 +233,7 @@ window.addEventListener("load", function () {
 
         var td = this.parentNode;
         var musique = td.parentNode;
-        console.log(musique);
+
         while (musique.hasChildNodes()) {
             musique.removeChild(musique.firstChild);
         }
@@ -241,7 +241,7 @@ window.addEventListener("load", function () {
 
     function player() {
 
-        console.log("test");
+
         var music = document.getElementById('music');
         var duration = music.duration;
         var pButton = document.getElementById('pButton');
