@@ -65,3 +65,9 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.delete{
+    background-color:red;
+    border-color: red;
+    color: white;
+}
+

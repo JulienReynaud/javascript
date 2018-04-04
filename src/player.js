@@ -48,6 +48,7 @@ window.addEventListener("load", function () {
             var deletebutton = document.createElement("input");
             deletebutton.setAttribute("type", "button");
             deletebutton.setAttribute("id", "delete" + i + "");
+            deletebutton.setAttribute("class", "delete");
             deletebutton.setAttribute("name", "delete");
             deletebutton.setAttribute("value", "-");
             var monterbutton = document.createElement("input");
@@ -55,6 +56,7 @@ window.addEventListener("load", function () {
             monterbutton.setAttribute("id", "monter" + i + "");
             monterbutton.setAttribute("name", i);
             monterbutton.setAttribute("value", "up");
+
             var descendrebutton = document.createElement("input");
             descendrebutton.setAttribute("type", "button");
             descendrebutton.setAttribute("id", "descendre" + i + "");
